@@ -19,7 +19,7 @@ export default function SearchBox({ updateInfo }) {
 
       const geoData = await data.json();
 
-      const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${geoData[0].lat}&lon=${geoData[0].lon}&appid=<YOUR WEATHER APP API KEY HERE>&units=metric`;
+      const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${geoData[0].lat}&lon=${geoData[0].lon}&appid=<YOUR OPEN WEATHER MAP API KEY HERE>&units=metric`;
 
       const weatherData = await fetch(API_URL);
       const weatherInfo = await weatherData.json();
